@@ -2,15 +2,7 @@
 
 angular
   .module('dt-lightbox-app', [
-    'ngAnimate',
-    'ngAria',
-    'ngCookies',
-    'ngMessages',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch',
-    'ngPrettyJson'
   ])
   .config(function ($routeProvider) {
     $routeProvider
