@@ -9,15 +9,15 @@ angular.module('dt-lightbox-app')
         'amount': 1000,
         'currency': 'CHF',
         'refno': new Date().getTime()%1000000,
-        'sign':'309161657065800131',
+        'sign':'30916165706580013',
         'paymentmethod': 'VIS',
-        'cardno': 4900000000000011, // only for testing
+        'aliasCC': '70119122433810042',
         'expm': 12,
-        'expy': 15,
+        'expy': 18,
         'successUrl': 'https://localhost:9000/#/success',
         'errorUrl': 'https://localhost:9000/#/error',
         'cancelUrl': 'https://localhost:9000/#/cancel',
-        'uppWebResponseMethod': 'GET', // change from POST to GET for response params
+        //'uppWebResponseMethod': 'GET', // change from POST to GET for response params
         'uppStartTarget': '_top', // make sure "redirect only" payment methods are properly handled
         'uppReturnTarget': '_top'
       }, 'closed': function() {console.log('payment-page closed');},
@@ -27,7 +27,3 @@ angular.module('dt-lightbox-app')
     };
 
   });
-
-
-
-
